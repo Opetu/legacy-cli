@@ -22,6 +22,6 @@ module Heroku
       :path     => "/apps/#{app}/buildpack-installations",
       :body     => Heroku::Helpers.json_encode(body)
       )
-    end
+    read app
   end
 end
